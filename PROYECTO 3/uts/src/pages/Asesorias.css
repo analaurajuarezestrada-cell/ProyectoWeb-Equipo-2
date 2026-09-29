@@ -1,0 +1,152 @@
+/* contenedor */
+.asesorias-container {
+  padding: 30px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.asesorias-container h1 {
+  color: #0b8f4d;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/*formulario*/
+.asesorias-form {
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-bottom: 35px;
+  border-left: 5px solid #0b8f4d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.asesorias-form h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #1a1f36;
+}
+
+.asesorias-form input,
+.asesorias-form textarea,
+.asesorias-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.asesorias-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.asesorias-form input:focus,
+.asesorias-form textarea:focus,
+.asesorias-form select:focus {
+  outline: none;
+  border-color: #0b8f4d;
+}
+
+/* botón */
+.asesorias-form button {
+  width: 100%;
+  background-color: #0b8f4d;
+  color: #ffffff;
+  border: none;
+  padding: 11px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.asesorias-form button:hover {
+  background-color: #087341;
+}
+
+/* lista de dudas*/
+.asesorias-lista {
+  max-width: 800px;
+}
+
+.asesorias-lista h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #1a1f36;
+}
+
+.sin-dudas {
+  font-size: 14px;
+  color: #666;
+}
+
+/* tarjeta de dudas*/
+.duda-card {
+  background: #ffffff;
+  padding: 15px 18px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #0b8f4d;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.duda-card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #1a1f36;
+}
+
+.duda-card .categoria {
+  font-size: 12px;
+  color: #0b8f4d;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.duda-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/*estado */
+.estado {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.estado.pendiente {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.estado.respondida {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* fehca*/
+.fecha {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .asesorias-form,
+  .asesorias-lista {
+    max-width: 100%;
+  }
+}

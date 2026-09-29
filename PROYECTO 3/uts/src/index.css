@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #ecf0f5;
+}
+
+.app {
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  margin-left: 230px;
+  transition: margin 0.3s;
+}
+
+.sidebar-collapsed .main {
+  margin-left: 70px;
+}
+
+.content {
+  padding: 20px;
+}

@@ -1,0 +1,46 @@
+.notif-docente-container {
+  padding: 20px;
+}
+
+.notif-docente-container h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.notif-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notif-card {
+  background: #ffffff;
+  border-left: 5px solid #2e7d32;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.notif-card.urgente {
+  border-left-color: #c62828;
+}
+
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.notif-title {
+  font-weight: 600;
+}
+
+.notif-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.notif-message {
+  color: #374151;
+  font-size: 0.95rem;
+}

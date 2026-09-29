@@ -1,0 +1,289 @@
+.tesinas-container {
+  padding: 20px;
+  background: #f5f7fa;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+
+  display: flex;
+  justify-content: center;
+}
+
+.tesinas-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tesinas-wrapper {
+  width: 100%;
+  max-width: 1300px;  /* ENTRE MAYOR SEA EL NUMERO MAS LARGA LA TABÑA*/
+}
+
+/* HEADER */
+.header h1 {
+  font-size: 18px; /* ↓ */
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.header p {
+  font-size: 12px; /* ↓ */
+  color: #6b7280d1;
+  margin-bottom: 12px;
+}
+
+/* CONTENEDOR */
+.tesinas-table-container {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tesinas-table tr:hover td {
+  color: #111827;
+}
+
+.estado.pendiente {
+  background: #facc15;
+}
+
+.estado.analizado {
+  background: #4ade80;
+}
+
+.tesinas-table tr:hover td {
+  color: #111827;
+} 
+/* TABLA */
+.tesinas-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* 🔽 HEADER MÁS COMPACTO */
+.tesinas-table th {
+  background: #f9fafb;
+  color: #374151;
+  font-size: 11px; /* ↓ */
+  font-weight: 600;
+  padding: 8px 10px; /* ↓ */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* 🔽 FILAS MÁS DELGADAS */
+.tesinas-table td {
+  padding: 6px 10px; /* 🔥 clave */
+  font-size: 11px; /* ↓ */
+  color: #374151;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle; /* 🔥 centra contenido */
+}
+
+/* HOVER */
+.tesinas-table tr:hover {
+  background: #f1f5f9;
+  transition: 0.2s;
+}
+/* Números centrados */
+.tesinas-table td:nth-child(6),
+.tesinas-table td:nth-child(7) {
+  text-align: center;
+}
+
+/* Acciones centradas */
+.tesinas-table td:last-child {
+  text-align: center;
+}
+
+.tesinas-table tr {
+  border-left: 3px solid transparent;
+}
+
+.tesinas-table tr:hover {
+  border-left: 3px solid #2563eb;
+}
+
+/* ESTADOS */
+.estado {
+  padding: 1px 6px; /* 🔥 más pequeño */
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.estado.pendiente {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.estado.en_revision {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.estado.analizado {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* BOTONES */
+button {
+  border: 1px solid #d1d5db;
+  background: white;
+  padding: 2px 6px; /* 🔥 clave */
+  font-size: 10px; /* 🔥 */
+  border-radius: 3px;
+  cursor: pointer;
+  line-height: 1.2; /* 🔥 evita altura extra */
+}
+
+button:hover {
+  background: #f3f4f6;
+}
+
+.btn-analizar {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+.btn-analizar:hover {
+  background: #1e40af;
+}
+
+.btn-analizado {
+  background: #e5e7eb;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+/* ACCIONES */
+.acciones {
+  display: flex;
+  gap: 3px; /* ↓ */
+  align-items: center;
+}
+
+/* FILTROS */
+.filtros {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px; /* ↓ */
+}
+
+.filtros input,
+.filtros select {
+  padding: 4px 6px; /* ↓ */
+  font-size: 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 3px;
+}
+
+/* TEXTO LARGO */
+.tesinas-table td:nth-child(2) {
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filtros input {
+  padding: 6px;
+}
+
+.filtros select {
+  padding: 6px;
+}
+
+/* BADGES */
+.estado {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.estado.pendiente {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.estado.analizado {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+/* BOTONES */
+.btn-analizar {
+  background: #3b82f6;
+  color: white;
+  border: none;
+}
+
+.btn-analizar:hover {
+  background: #2563eb;
+}
+
+.btn-revertir {
+  background: #f59e0b;
+  color: white;
+  border: none;
+}
+
+.btn-revertir:hover {
+  background: #d97706;
+}
+
+/* SOLO afecta a tesinas */
+.tesinas-container .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tesinas-container .card {
+  padding: 18px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.tesinas-container .card h3 {
+  font-size: 22px;
+  margin: 0;
+  color: #111827;
+}
+
+.tesinas-container .card p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Colores */
+.tesinas-container .card.total {
+  border-top: 4px solid #3b82f6;
+}
+
+.tesinas-container .card.pendientes {
+  border-top: 4px solid #f59e0b;
+}
+
+.tesinas-container .card.analizados {
+  border-top: 4px solid #10b981;
+}
+
+.tesinas-container .card.promedio {
+  border-top: 4px solid #6366f1;
+}

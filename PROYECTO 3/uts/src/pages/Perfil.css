@@ -1,0 +1,214 @@
+.perfil-container {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 🔥 clave */
+  background: #f4f6f9;
+}
+
+/* TARJETA */
+.perfil-card {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* HEADER (CLAVE PARA QUE SE VEA PRO) */
+.perfil-card h2 {
+  background: #1f2937; /* gris institucional oscuro */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 20px;
+  margin: 0;
+}
+
+/* INFO */
+.perfil-info {
+  padding: 20px;
+}
+
+/* FILAS TIPO SISTEMA */
+.perfil-info p,
+.perfil-nombre {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+  margin: 0;
+}
+
+/* LABEL */
+.perfil-info strong,
+.perfil-nombre strong {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* VALORES */
+.perfil-info span,
+.perfil-nombre span {
+  font-size: 13px;
+  color: #111827;
+}
+
+/* INPUT */
+.perfil-nombre input {
+  width: 100%;
+  max-width: 250px;
+  padding: 6px 8px;
+  font-size: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.perfil-nombre input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* BOTONES */
+.perfil-actions {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* BASE */
+.perfil-actions button {
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+/* EDITAR / GUARDAR */
+.perfil-actions button:first-child {
+  background: #2563eb;
+  color: white;
+}
+
+.perfil-actions button:first-child:hover {
+  background: #1e40af;
+}
+
+/* CANCELAR */
+.perfil-actions button:nth-child(2) {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.perfil-actions button:nth-child(2):hover {
+  background: #e5e7eb;
+}
+
+/* CONTRASEÑA */
+.perfil-actions button:last-child {
+  background: transparent;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+}
+
+.perfil-actions button:last-child:hover {
+  background: #dc2626;
+  color: white;
+}
+
+.password-modal{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+}
+
+.password-card{
+  width:500px;
+  background:#fff;
+  border:1px solid #dcdcdc;
+  border-radius:6px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.password-header{
+  background:#0b4f75;
+  color:white;
+  padding:12px 20px;
+  font-size:16px;
+  font-weight:600;
+}
+
+.password-body{
+  padding:20px;
+}
+
+.password-row{
+  display:grid;
+  grid-template-columns:170px 1fr;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.password-row label{
+  font-size:13px;
+  font-weight:600;
+  color:#333;
+}
+
+.password-input{
+  display:flex;
+  gap:5px;
+}
+
+.password-input input{
+  flex:1;
+  padding:8px;
+  border:1px solid #cfcfcf;
+  border-radius:3px;
+}
+
+.password-input button{
+  width:40px;
+  border:none;
+  background:#f3f4f6;
+  cursor:pointer;
+  border-radius:3px;
+}
+
+.password-footer{
+  border-top:1px solid #e5e5e5;
+  padding:15px;
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+}
+
+.btn-guardar-password{
+  background:#0b4f75;
+  color:white;
+  border:none;
+  padding:8px 18px;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.btn-cancelar-password{
+  background:#e5e7eb;
+  border:none;
+  padding:8px 18px;
+  border-radius:4px;
+  cursor:pointer;
+}

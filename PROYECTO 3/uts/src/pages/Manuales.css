@@ -1,0 +1,133 @@
+/* Contenedor general */
+.manuales-container {
+  padding: 30px 40px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* Título */
+.manuales-container h1 {
+  color: #212529;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Subtítulo */
+.manuales-subtitle {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+/* Grid */
+.manuales-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Tarjeta */
+.manual-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border-left: 4px solid #02A65B; 
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+}
+
+.manual-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.manual-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.manual-icon {
+  font-size: 1.2rem;
+  color: #3c8dbc;
+  margin-right: 10px;
+}
+
+/* Título del manual */
+.manual-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #212529;
+  margin: 0;
+}
+
+/* Descripción */
+.manual-card p {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin: 10px 0 16px;
+  line-height: 1.4;
+}
+
+/* Acciones */
+.manual-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: auto;
+}
+
+/* Botones */
+.btn-ver,
+.btn-descargar {
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Ver */
+.btn-ver {
+  background-color: #02A65B;
+  color: #ffffff;
+}
+
+.btn-ver:hover {
+  background-color: #029a55;
+}
+
+/* Descargar */
+.btn-descargar {
+  background-color: #ffffff;
+  color: #3c8dbc;
+  border: 1px solid #3c8dbc;
+}
+
+.btn-descargar:hover {
+  background-color: #3c8dbc;
+  color: #ffffff;
+}
+
+/* Buscador */
+.manuales-search {
+  margin-bottom: 25px;
+}
+
+.manuales-search input {
+  width: 100%;
+  max-width: 420px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+}
+
+.manuales-search input:focus {
+  border-color: #3c8dbc;
+}

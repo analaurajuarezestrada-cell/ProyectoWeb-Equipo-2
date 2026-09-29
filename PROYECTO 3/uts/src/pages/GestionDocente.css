@@ -1,0 +1,54 @@
+
+
+.gestion-docente {
+  margin-top: 20px;
+}
+
+.gestion-docente-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6b7280;
+  padding: 10px 16px;
+}
+
+.gestion-docente-list {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0 0;
+}
+
+.gestion-docente-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  color: #1f2d3d;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.gestion-docente-list li:hover {
+  background-color: #eaf4fb;
+  color: #0d6efd;
+}
+
+.gestion-docente-list .icon {
+  font-size: 0.9rem;
+  color: #3c8dbc;
+}
+
+
+.gestion-docente-list li.active {
+  background-color: #3c8dbc;
+  color: #ffffff;
+}
+
+.gestion-docente-list li.active .icon {
+  color: #ffffff;
+}
